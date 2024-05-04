@@ -1,34 +1,23 @@
-@font-face {
-  font-family: "montserrat-regular";
-  src: url("../_fonts/Montserrat-Regular.ttf");
-  font-display: auto;
-}
-@font-face {
-  font-family: "montserrat-bold";
-  src: url("../_fonts/Montserrat-Bold.ttf"); 
-  font-display: auto;
-}
-@font-face {
-  font-family: "montserrat-extrabold";
-  src: url("../_fonts/Montserrat-ExtraBold.ttf");
-}
-
 :root {
-  --dark: #194d44;
-  --light: #297c6b;
-  --medium: #5bc8af;
-  --text-color: #333;
-  --faded: #eaeaea;
-  --body-bg: #f5f5f5;
+  --primary: #15ae75;
+  --secondary: #169aaf;
+  --light-secondary: #93d2db;
+  --dark-primary: #0f875a;
+  --light-primary: #13ae74;
+  --yellow: #fec400;
+  --red: #ff5733;
+  --white: #ffffff;
+  --light-white: #f7f7f7;
+  --gray: #e9e9e9;
+  --black: #181d21;
+  --medium-black: #2b2f32;
+  --light-black: #34383b;
+  --lightest-black: #424649;
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-
 }
 
 .container {
@@ -125,6 +114,171 @@ img {
   height: auto;
 }
 
+
+body {
+  font-family: "open-sans";
+  header{
+    .hamburger{
+      .first{}
+      .second{}
+      .third{}
+    }
+    .mid-header{
+      .left{
+        .logo-wrapper{
+          img{}
+        }
+        .search-wrapper{
+          form{
+            input{}
+            button{}
+            svg{}
+          }
+        }
+      }
+      .right{
+        .help-wrapper{
+          svg{}
+        }
+        .notification-wrapper{
+          svg{}
+          p{}
+        }
+        .login-wrapper{
+          img{}
+          p{}
+          svg{}
+        }
+      }
+    }
+  }
+
+  aside{
+    .sidebar-wrapper{
+      .sidebar-links{
+        a{
+          svg{}
+        }
+      }
+    }
+  }
+
+  main{
+    .filter-wrapper{
+      .top{
+        .filter-title{}
+        p{}
+      }
+      .mid{
+        .categories-wrapper{
+        } 
+        .filters{
+          .filter-header{
+            .filter-title{}
+            svg{}
+          }
+          .search-wrapper{
+            form{
+              .input-text{
+                input{}
+                svg{}
+              }
+            }
+          }
+          .filter-options-wrapper{
+            .filter-option{
+              .checkbox{
+                svg{}
+              }
+              h4{}
+            }
+            .more-btn{}
+          }
+        }
+      }
+      .bottom{
+        .generic-filter-btn-wrapper{
+          .clear-all-btn{}
+          .save-btn{}
+          .apply-btn{}
+        }
+      }
+    }
+    .main-section{
+      .multi-tabs-wrapper{
+        .multi-tab-btn{}
+      }
+      .secondary-filter-wrapper{
+        .left{
+          button{}
+          select{
+            option{}
+          }
+        }
+        .right{
+          button{}
+        }
+      }
+      .my-account-display-wrapper{
+        .data-display-wrapper{
+          .data-display-inner{
+            .data-graph-wrapper{
+              .left{
+                .data-heading{
+                  .data-title{
+                    input{}
+                    h2{}
+                  }
+                  .data-details{
+                    .location{
+                      svg{}
+                      p{}
+                    }
+                    .link{
+                      svg{} 
+                      p{}
+                    }
+                    .phone{
+                      svg{}
+                    }
+                  }
+                }
+                .data-table-wrapper{
+                  .data-table-inner{
+                    .table-col{
+                      .column-title{}
+                      .column-data{}
+                    }
+                  }
+                }
+              }
+              .right{
+                .right-graph-inner{
+                  .add-btn{
+                    button{}
+                  }
+                  .graph{}
+                }
+              }
+            }
+            .data-footer{
+              .data-footer-inner{}
+                .left{
+                  p{}
+                }
+                .right{
+                  svg{}
+                }
+            }
+          }
+        } 
+        .extra-details-wrapper{
+          p{}
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1200px) {
 

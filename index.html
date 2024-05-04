@@ -11,7 +11,544 @@
 </head>
 
 <body class="">
-  
+  <header>
+    <div class="hamburger">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+    </div>
+    <div class="mid-header">
+      <div class="left">
+        <div class="logo-wrapper">
+          <img src="./_assets/_images/logo.png" alt="">
+        </div>
+        <div class="search-wrapper">
+          <form>
+            <input />
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        <div class="help-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256a208 208 0 1 0-416 0 208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0z"/></svg>
+        </div>
+        <div class="notification-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 0c-17.7 0-32 14.3-32 32v19.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416h400c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6c-28.3-35.5-43.8-79.6-43.8-125V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3c25.8-40 39.7-86.7 39.7-134.6V208c0-61.9 50.1-112 112-112zm64 352H160c0 17 6.7 33.3 18.7 45.3S207 512 224 512s33.3-6.7 45.3-18.7S288 465 288 448z"/></svg>
+          <p class="count"></p>
+        </div>
+        <div class="login-wrapper">
+          <img src="./_assets/_images/login-img.png" alt="">
+          <p>Julia Michaels</p>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <aside>
+    <ul class="sidebar-wrapper">
+      <li class="sidebar-links">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1H392c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9.1-2.8v-69.6H32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7l255.4 224.5c8 7 12 15 11 24z"/></svg>
+          Home
+        </a>
+      </li>
+      <li class="sidebar-links">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M320 464c8.8 0 16-7.2 16-16V160h-80c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16h256zM0 64C0 28.7 28.7 0 64 0h165.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/></svg>
+          Profiles
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <main>
+    <section class="filter-wrapper">
+      <div class="top">
+        <h3 class="filter-title">FILTERS TO FIND PROSPECTS</h3>
+        <p>These Fliters help refine your search results across various Signals and Segments.</p>
+      </div>
+      <div class="mid">
+        <div class="categories-wrapper filters">
+          <div class="filter-header">
+            <h3 class="filter-title">CATEGORIES</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+          </div>
+          <div class="search-wrapper">
+            <form action="">
+              <div class="input-text">
+                <input type="text" name="" id="" placeholder="Search Categories">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+              </div>
+            </form>
+          </div>
+          <div class="filter-options-wrapper">
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>ATV Dealer</h4>
+            </div>
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>ATV Repair Shop</h4>
+            </div>
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>Abbey</h4>
+            </div>
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>Abrasive Supplier</h4>
+            </div>
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>Abundant Life Church</h4>
+            </div>
+            <button class="more-btn">More...</button>
+          </div>
+        </div>
+        <div class="website-wrapper filters">
+          <div class="filter-header">
+            <h3 class="filter-title">WEBSITE</h3>
+            <div class="and-or-wrapper">
+              <div class="btn-wrapper">
+                <button class="and-btn">AND</button>
+                <button class="or-btn">OR</button>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </div>
+          </div>
+          <div class="filter-options-wrapper">
+            <div class="filter-option">
+              <h4>Website</h4>
+              <div class="slider-btn-wrapper">
+                <div class="slider">
+                  <div class="slider-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-option">
+              <h4>Responsive</h4>
+              <div class="slider-btn-wrapper">
+                <div class="slider">
+                  <div class="slider-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-option">
+              <h4>Mobile</h4>
+              <div class="slider-btn-wrapper">
+                <div class="slider">
+                  <div class="slider-btn"></div>
+                </div>
+              </div>
+            </div>
+            <button class="more-btn">More...</button>
+          </div>
+        </div>
+        <div class="language-wrapper filters">
+          <div class="filter-header">
+            <h3 class="filter-title">PRIMARY LANGUAGES</h3>
+            <div class="and-or-wrapper">
+              <div class="btn-wrapper">
+                <button class="and-btn">AND</button>
+                <button class="or-btn">OR</button>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </div>
+          </div>
+          <div class="search-wrapper">
+            <form action="">
+              <div class="input-text">
+                <input type="text" name="" id="" placeholder="Search Primary Languages">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+              </div>
+            </form>
+          </div>
+          <div class="filter-options-wrapper">
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>Catalan (Valencia)</h4>
+            </div>
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>Chinese</h4>
+            </div>
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>English</h4>
+            </div>
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>French</h4>
+            </div>
+            <div class="filter-option">
+              <div class="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              </div>
+              <h4>German</h4>
+            </div>
+            <button class="more-btn">More...</button>
+          </div>
+        </div>
+        <div class="content-wrapper filters">
+          <div class="filter-header">
+            <h3 class="filter-title">CONTENT</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+          </div>
+        </div>
+        <div class="social-wrapper filters">
+          <div class="filter-header">
+            <h3 class="filter-title">SOCIAL</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+          </div>
+        </div>
+        <div class="seo-wrapper filters">
+          <div class="filter-header">
+            <h3 class="filter-title">SEO</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+          </div>
+        </div>
+        <div class="sem-wrapper filters">
+          <div class="filter-header">
+            <h3 class="filter-title">SEM</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="generic-filter-btn-wrapper">
+          <button class="clear-all-btn">CLEAR ALL</button>
+          <button class="save-btn">SAVE</button>
+          <button class="apply-btn">APPLY</button>
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="multi-tabs-wrapper">
+        <div class="multi-tab-btn my-account-btn" id="tab-one">MY ACCOUNT (78)</div>
+        <div class="multi-tab-btn new-tab-btn" id="tab-two">NEW (75)</div>
+        <div class="multi-tab-btn saved-searches-btn" id="tab-three">SAVED SEARCHES (05)</div>
+      </div>
+      <div class="secondary-filter-wrapper">
+        <div class="left">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M3.9 54.9C10.5 40.9 24.5 32 40 32h432c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6v-79.1L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"/></svg>
+          </button>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M151.6 42.4C145.5 35.8 137 32 128 32s-17.5 3.8-23.6 10.4l-88 96c-11.9 13-11.1 33.3 2 45.2s33.3 11.1 45.2-2L96 146.3V448c0 17.7 14.3 32 32 32s32-14.3 32-32V146.3l32.4 35.4c11.9 13 32.2 13.9 45.2 2s13.9-32.2 2-45.2l-88-96zM320 480h32c17.7 0 32-14.3 32-32s-14.3-32-32-32h-32c-17.7 0-32 14.3-32 32s14.3 32 32 32zm0-128h96c17.7 0 32-14.3 32-32s-14.3-32-32-32h-96c-17.7 0-32 14.3-32 32s14.3 32 32 32zm0-128h160c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-17.7 0-32 14.3-32 32s14.3 32 32 32zm0-128h224c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-17.7 0-32 14.3-32 32s14.3 32 32 32z"/></svg>
+          </button>
+          Sort by:
+          <select name="" id="">
+            <option value="">Newly Added</option>
+            <option value="">Alphabetically</option>
+            <option value="">New to Old</option>
+            <option value="">Old to New</option>
+          </select>
+        </div>
+        <div class="right">
+          <button>MAP</button>
+          <button>CARD</button>
+        </div>
+      </div>
+      <div class="my-account-display-wrapper my-account-display" id="tab-display-one">
+        <div class="data-display-wrapper">
+          <div class="data-display-inner">
+            <div class="data-graph-wrapper">
+              <div class="left">
+                <div class="data-heading">
+                  <div class="data-title">
+                    <input type="checkbox">
+                    <h2>Nationwide Automobile</h2>
+                  </div>
+                  <div class="data-details">
+                    <div class="location">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192 384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2 12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                      <p>26 Price Street, New York, NY 10012</p>
+                    </div>
+                    <div class="link">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6 31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0l112.3-112.3zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5 50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l112.2-112.3c31.5-31.5 82.5-31.5 114 0 27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                      <p>www.nationwide.com</p>
+                    </div>
+                    <div class="phone">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64c0 247.4 200.6 448 448 448 18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368c-70.4-33.3-127.4-90.3-160.7-160.7l49.3-40.3c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                      <p>(718) 523 9090</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="data-table-wrapper">
+                  <div class="data-table-inner">
+                    <div class="table-col">
+                      <p class="column-title">Age</p>
+                      <p class="column-data">19 Y</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Employees</p>
+                      <p class="column-data">35-50</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Revenue</p>
+                      <p class="column-data">$5-10M</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Locations</p>
+                      <p class="column-data">06</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Contacts</p>
+                      <p class="column-data">06</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Avg. Spend/Mo</p>
+                      <p class="column-data">Unknown</p>
+                    </div>
+                  </div>
+                  <div class="data-pills">
+                    <div class="category-pills-wrapper">
+                      <p>Category(S):</p>
+                      <div class="pills-wrapper">
+                        <p>Auto Auction</p>
+                        <p>Auto Body Parts Supplier</p>
+                      </div>
+                    </div>
+                    <div class="category-pills-wrapper">
+                      <p>Prospects For:</p>
+                      <div class="pills-wrapper">
+                        <p>Website</p>
+                        <p>Social</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="right-graph-inner">
+                  <div class="add-btn">
+                    <button>ADD</button>
+                  </div>
+                  <div class="graph">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="data-footer">
+              <div class="data-footer-inner">
+                <div class="left">
+                  <div>
+                    <p>Source:</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4 26.5 9.6 56.2 15.1 87.8 15.1 124.7 0 208-80.5 208-160S380.7 80 256 80 48 160.5 48 240c0 32 12.4 62.8 35.7 89.2 8.6 9.7 12.8 22.5 11.8 35.5-1.4 18.1-5.7 34.7-11.3 49.4 17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1 10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240 0 125.1 114.6 32 256 32s256 93.1 256 208-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9-11.9 8.7-31.3 20.6-54.3 30.6-15.1 6.6-32.3 12.6-50.1 16.1-.8.2-1.6.3-2.4.5-4.4.8-8.7 1.5-13.2 1.9-.2 0-.5.1-.7.1-5.1.5-10.2.8-15.3.8-6.5 0-12.3-3.9-14.8-9.9S0 457.4 4.5 452.8c4.1-4.2 7.8-8.7 11.3-13.5 1.7-2.3 3.3-4.6 4.8-6.9.1-.2.2-.3.3-.5z"/></svg>
+                  </div>
+                  <div>
+                    <p>Updated On:</p>
+                    <p>Dec 2017</p>
+                  </div>
+                </div>
+                <div class="right">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-display-wrapper">
+          <div class="data-display-inner">
+            <div class="data-graph-wrapper">
+              <div class="left">
+                <div class="data-heading">
+                  <div class="data-title">
+                    <input type="checkbox">
+                    <h2>Nationwide Automobile</h2>
+                  </div>
+                  <div class="data-details">
+                    <div class="location">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192 384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2 12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                      <p>26 Price Street, New York, NY 10012</p>
+                    </div>
+                    <div class="link">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6 31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0l112.3-112.3zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5 50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l112.2-112.3c31.5-31.5 82.5-31.5 114 0 27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                      <p>www.nationwide.com</p>
+                    </div>
+                    <div class="phone">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64c0 247.4 200.6 448 448 448 18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368c-70.4-33.3-127.4-90.3-160.7-160.7l49.3-40.3c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                      <p>(718) 523 9090</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="data-table-wrapper">
+                  <div class="data-pills">
+                    <div class="category-pills-wrapper">
+                      <p>Category(S):</p>
+                      <div class="pills-wrapper">
+                        <p>Auto Auction</p>
+                        <p>Auto Body Parts Supplier</p>
+                      </div>
+                    </div>
+                    <div class="category-pills-wrapper">
+                      <p>Prospects For:</p>
+                      <div class="pills-wrapper">
+                        <p>Website</p>
+                        <p>Social</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="right-graph-inner">
+                  <div class="add-btn">
+                    <button>ADD</button>
+                  </div>
+                  <div class="graph">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="data-footer">
+              <div class="data-footer-inner">
+                <div class="left">
+                  <div>
+                    <p>Source:</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4 26.5 9.6 56.2 15.1 87.8 15.1 124.7 0 208-80.5 208-160S380.7 80 256 80 48 160.5 48 240c0 32 12.4 62.8 35.7 89.2 8.6 9.7 12.8 22.5 11.8 35.5-1.4 18.1-5.7 34.7-11.3 49.4 17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1 10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240 0 125.1 114.6 32 256 32s256 93.1 256 208-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9-11.9 8.7-31.3 20.6-54.3 30.6-15.1 6.6-32.3 12.6-50.1 16.1-.8.2-1.6.3-2.4.5-4.4.8-8.7 1.5-13.2 1.9-.2 0-.5.1-.7.1-5.1.5-10.2.8-15.3.8-6.5 0-12.3-3.9-14.8-9.9S0 457.4 4.5 452.8c4.1-4.2 7.8-8.7 11.3-13.5 1.7-2.3 3.3-4.6 4.8-6.9.1-.2.2-.3.3-.5z"/></svg>
+                  </div>
+                  <div>
+                    <p>Updated On:</p>
+                    <p>Dec 2017</p>
+                  </div>
+                </div>
+                <div class="right">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-display-wrapper">
+          <div class="data-display-inner">
+            <div class="data-graph-wrapper">
+              <div class="left">
+                <div class="data-heading">
+                  <div class="data-title">
+                    <input type="checkbox">
+                    <h2>Nationwide Automobile</h2>
+                  </div>
+                  <div class="data-details">
+                    <div class="location">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192 384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2 12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                      <p>26 Price Street, New York, NY 10012</p>
+                    </div>
+                    <div class="link">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6 31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0l112.3-112.3zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5 50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l112.2-112.3c31.5-31.5 82.5-31.5 114 0 27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                      <p>www.nationwide.com</p>
+                    </div>
+                    <div class="phone">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64c0 247.4 200.6 448 448 448 18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368c-70.4-33.3-127.4-90.3-160.7-160.7l49.3-40.3c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                      <p>(718) 523 9090</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="data-table-wrapper">
+                  <div class="data-table-inner">
+                    <div class="table-col">
+                      <p class="column-title">Age</p>
+                      <p class="column-data">19 Y</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Employees</p>
+                      <p class="column-data">35-50</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Revenue</p>
+                      <p class="column-data">$5-10M</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Locations</p>
+                      <p class="column-data">03</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Contacts</p>
+                      <p class="column-data">06</p>
+                    </div>
+                    <div class="table-col">
+                      <p class="column-title">Avg. Spend/Mo</p>
+                      <p class="column-data">$$$$$</p>
+                    </div>
+                  </div>
+                  <div class="data-pills">
+                    <div class="category-pills-wrapper">
+                      <p>Category(S):</p>
+                      <div class="pills-wrapper">
+                        <p>Auto Auction</p>
+                        <p>Auto Body Parts Supplier</p>
+                      </div>
+                    </div>
+                    <div class="category-pills-wrapper">
+                      <p>Prospects For:</p>
+                      <div class="pills-wrapper">
+                        <p>Website</p>
+                        <p>Social</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="right-graph-inner">
+                  <div class="add-btn">
+                    <button>ADD</button>
+                  </div>
+                  <div class="graph">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="data-footer">
+              <div class="data-footer-inner">
+                <div class="left">
+                  <div>
+                    <p>Source:</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4 26.5 9.6 56.2 15.1 87.8 15.1 124.7 0 208-80.5 208-160S380.7 80 256 80 48 160.5 48 240c0 32 12.4 62.8 35.7 89.2 8.6 9.7 12.8 22.5 11.8 35.5-1.4 18.1-5.7 34.7-11.3 49.4 17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1 10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240 0 125.1 114.6 32 256 32s256 93.1 256 208-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9-11.9 8.7-31.3 20.6-54.3 30.6-15.1 6.6-32.3 12.6-50.1 16.1-.8.2-1.6.3-2.4.5-4.4.8-8.7 1.5-13.2 1.9-.2 0-.5.1-.7.1-5.1.5-10.2.8-15.3.8-6.5 0-12.3-3.9-14.8-9.9S0 457.4 4.5 452.8c4.1-4.2 7.8-8.7 11.3-13.5 1.7-2.3 3.3-4.6 4.8-6.9.1-.2.2-.3.3-.5z"/></svg>
+                  </div>
+                  <div>
+                    <p>Updated On:</p>
+                    <p>Dec 2017</p>
+                  </div>
+                </div>
+                <div class="right">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-display-wrapper extra-details-wrapper">
+          <p>We can try and fetch more results via an external source. Ok! <span>Get me more</span>.</p>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
   <script src="./_assets/_js/index.js"></script>
 </body>
 
