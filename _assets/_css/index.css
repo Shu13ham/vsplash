@@ -220,11 +220,15 @@ body aside .sidebar-wrapper .sidebar-links a svg {
   fill: rgba(255, 255, 255, 0.3137254902);
 }
 body main {
-  margin-left: 100px;
-  margin-top: 28px;
+  background-color: #dbdbdb;
+  padding-left: 100px;
+  padding-top: 28px;
 }
 body main .filter-wrapper {
   width: 320px;
+  position: fixed;
+  top: 98px;
+  left: 100px;
 }
 body main .filter-wrapper .top {
   color: #fff;
@@ -245,7 +249,18 @@ body main .filter-wrapper .top p {
   line-height: 15.6px;
 }
 body main .filter-wrapper .mid {
+  max-height: 450px;
+  overflow: auto;
   background-color: var(--light-black);
+}
+body main .filter-wrapper .mid::-webkit-scrollbar {
+  width: 10px;
+}
+body main .filter-wrapper .mid::-webkit-scrollbar-thumb {
+  background: #bab9b9;
+}
+body main .filter-wrapper .mid::-webkit-scrollbar-thumb:hover {
+  background: #7a7a7a;
 }
 body main .filter-wrapper .mid .filters {
   padding: 15px 0;
@@ -362,6 +377,7 @@ body main .filter-wrapper .mid .and-or-wrapper .and-btn.active, body main .filte
 }
 body main .filter-wrapper .bottom {
   padding: 17px 0;
+  border-radius: 0 0 4px 4px;
   background-color: var(--medium-black);
 }
 body main .filter-wrapper .bottom .generic-filter-btn-wrapper {
@@ -377,4 +393,226 @@ body main .filter-wrapper .bottom .generic-filter-btn-wrapper button {
   color: rgba(255, 255, 255, 0.3137254902);
   font-size: 12px;
   padding: 7px 12px;
+}
+body main .main-section {
+  margin-left: 360px;
+}
+body main .main-section .multi-tabs-wrapper {
+  border-bottom: 1px solid #bbb;
+}
+body main .main-section .multi-tabs-wrapper .multi-tab-btn {
+  font-size: 14px;
+  color: #737373;
+  margin-right: 30px;
+  height: 40px;
+  border-bottom: 5px solid transparent;
+}
+body main .main-section .multi-tabs-wrapper .multi-tab-btn.active {
+  color: var(--primary);
+  border-bottom: 5px solid var(--primary);
+}
+body main .main-section .secondary-filter-wrapper {
+  margin: 18px 0 20px;
+  padding-right: 22px;
+}
+body main .main-section .secondary-filter-wrapper .left button {
+  background: none;
+  border: none;
+  fill: var(--primary);
+  margin-right: 18px;
+}
+body main .main-section .secondary-filter-wrapper .left select {
+  background: none;
+  color: var(--primary);
+  border: none;
+  margin: 0 5px;
+  font-size: 14px;
+}
+body main .main-section .secondary-filter-wrapper .right button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  margin-left: 10px;
+}
+body main .main-section .my-account-display-wrapper {
+  padding-right: 22px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper {
+  background: var(--light-white);
+  padding: 14px 40px 14px 50px;
+  border-radius: 8px;
+  border-left: 5px solid var(--light-primary);
+  margin-bottom: 21px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper.active {
+  border-left: 5px solid var(--dark-primary);
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left {
+  padding-right: 14px;
+  border-right: 1px solid #ddd;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading {
+  padding-bottom: 16px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title {
+  position: relative;
+  margin-bottom: 4px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title h2 {
+  font-size: 20px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .location svg, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .link svg, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .phone svg {
+  fill: var(--dark-primary);
+  margin-right: 8px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .location p, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .link p, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .phone p {
+  font-size: 14px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .link p {
+  color: var(--dark-primary);
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-table-inner {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 16px 0;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-table-inner .table-col .column-title {
+  font-size: 14px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-table-inner .table-col .column-data {
+  font-size: 22px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-pills {
+  padding-top: 16px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-pills .category-pills-wrapper .pills-title {
+  font-size: 14px;
+  margin-right: 18px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-pills .category-pills-wrapper .pills-wrapper {
+  flex-wrap: wrap;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-pills .category-pills-wrapper .pills-wrapper p {
+  font-size: 13px;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .add-btn button {
+  font-size: 14px;
+  background: none;
+  color: var(--primary);
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 1px 3px 5px #555;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .third-circle {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  z-index: 1;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .fourth-circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 1px 3px 5px #555;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .left-half {
+  background-color: red;
+  border-radius: 52px 0 0;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .right-half {
+  background-color: red;
+  border-radius: 0 52px 0 0;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .left-num {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .mid-num {
+  left: 50%;
+  position: absolute;
+  top: 35px;
+  transform: translate(-50%);
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  z-index: 2;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .right-num {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer {
+  padding: 14px 0;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer .left p {
+  font-size: 14px;
+  margin-right: 14px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer .left svg {
+  fill: var(--primary);
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer .left .src-btn {
+  margin-right: 26px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer .right svg {
+  fill: var(--primary);
+  transform: rotate(180deg);
+}
+body main .main-section .my-account-display-wrapper .extra-details-wrapper {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .main-section .my-account-display-wrapper .extra-details-wrapper p span {
+  color: var(--primary);
 }/*# sourceMappingURL=index.css.map */
