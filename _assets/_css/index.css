@@ -11,6 +11,7 @@
   --yellow: #fec400;
   --red: #ff5733;
   --white: #ffffff;
+  --medium-white: #808080;
   --light-white: #f7f7f7;
   --gray: #e9e9e9;
   --black: #181d21;
@@ -143,17 +144,20 @@ body header .hamburger .first {
   width: 28px;
   height: 3px;
   background-color: #4E554E;
+  border-radius: 4px;
 }
 body header .hamburger .second {
   width: 28px;
   height: 3px;
   background-color: #4E554E;
+  border-radius: 4px;
   margin-top: 3px;
 }
 body header .hamburger .third {
   width: 17px;
   height: 3px;
   background-color: #4E554E;
+  border-radius: 4px;
   margin-top: 3px;
 }
 body header .mid-header .left .logo-wrapper {
@@ -163,13 +167,19 @@ body header .mid-header .left .logo-wrapper {
 }
 body header .mid-header .left .search-wrapper form input {
   padding: 12px 10px;
-  width: 504px;
+  width: 484px;
   border: none;
+}
+body header .mid-header .left .search-wrapper form input::-moz-placeholder {
+  color: var(--medium-white);
+}
+body header .mid-header .left .search-wrapper form input::placeholder {
+  color: var(--medium-white);
 }
 body header .mid-header .left .search-wrapper form button {
   cursor: pointer;
   height: 39px;
-  padding: 10px 10px;
+  padding: 10px 16px;
   background-color: var(--primary);
   border: none;
 }
@@ -219,7 +229,7 @@ body header .mid-header .right .login-wrapper svg {
 body aside {
   width: 83px;
   height: 100%;
-  background: #202529;
+  background: #181D21;
   position: fixed;
   top: 70px;
   bottom: 0;
@@ -233,18 +243,18 @@ body aside .sidebar-wrapper .sidebar-links {
   width: 100%;
 }
 body aside .sidebar-wrapper .sidebar-links a {
-  color: rgba(255, 255, 255, 0.3137254902);
+  color: rgba(255, 255, 255, 0.5019607843);
   font-size: 13px;
   text-decoration: none;
   line-height: 15.6px;
 }
 body aside .sidebar-wrapper .sidebar-links a svg {
   margin-bottom: 6px;
-  fill: rgba(255, 255, 255, 0.3137254902);
+  fill: rgba(255, 255, 255, 0.5019607843);
 }
 body main {
-  background-color: #dbdbdb;
-  padding: 28px 0 28px 100px;
+  background-color: #E9E9E9;
+  padding: 28px 0 42px 100px;
 }
 body main .filter-wrapper {
   width: 320px;
@@ -262,16 +272,17 @@ body main .filter-wrapper .top {
 }
 body main .filter-wrapper .top .filter-title {
   font-size: 15px;
-  margin-bottom: 5px;
-  font-weight: 600;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 body main .filter-wrapper .top p {
   font-size: 13px;
   width: 280px;
   line-height: 15.6px;
+  color: #b9e1e7;
 }
 body main .filter-wrapper .mid {
-  max-height: calc(100vh - 280px);
+  max-height: calc(100vh - 300px);
   overflow: auto;
   background-color: var(--light-black);
 }
@@ -285,8 +296,7 @@ body main .filter-wrapper .mid::-webkit-scrollbar-thumb:hover {
   background: #7a7a7a;
 }
 body main .filter-wrapper .mid .filters {
-  padding: 15px 0;
-  padding: 20px;
+  padding: 15px 20px;
   border: 1px solid #3b3b3b;
 }
 body main .filter-wrapper .mid .filters .filter-header .filter-title {
@@ -296,7 +306,7 @@ body main .filter-wrapper .mid .filters .filter-header .filter-title {
   text-transform: uppercase;
 }
 body main .filter-wrapper .mid .filters .filter-header svg {
-  fill: rgba(255, 255, 255, 0.3137254902);
+  fill: rgba(255, 255, 255, 0.5019607843);
   cursor: pointer;
 }
 body main .filter-wrapper .mid .filters .search-wrapper {
@@ -306,16 +316,17 @@ body main .filter-wrapper .mid .filters .search-wrapper form .input-text {
   position: relative;
 }
 body main .filter-wrapper .mid .filters .search-wrapper form .input-text input {
+  border-radius: 8px;
   height: 35px;
   padding-left: 31px;
-  color: rgba(255, 255, 255, 0.3137254902);
+  color: rgba(255, 255, 255, 0.5019607843);
   background-color: var(--lightest-black);
   border: none;
   box-shadow: none;
   width: calc(100% - 30px);
 }
 body main .filter-wrapper .mid .filters .search-wrapper form .input-text svg {
-  fill: rgba(255, 255, 255, 0.3137254902);
+  fill: rgba(255, 255, 255, 0.5019607843);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -355,16 +366,16 @@ body main .filter-wrapper .mid .filters .filter-options-wrapper .filter-option .
   background-color: var(--primary);
 }
 body main .filter-wrapper .mid .filters .filter-options-wrapper .filter-option .checkbox svg {
-  color: rgba(255, 255, 255, 0.3137254902);
+  color: rgba(255, 255, 255, 0.5019607843);
 }
 body main .filter-wrapper .mid .filters .filter-options-wrapper .filter-option .checkbox.active svg {
   fill: #fff;
 }
 body main .filter-wrapper .mid .filters .filter-options-wrapper .filter-option h4 {
-  color: rgba(255, 255, 255, 0.3137254902);
+  color: rgba(255, 255, 255, 0.5019607843);
   font-size: 14px;
   font-weight: 500;
-  padding-left: 15px;
+  padding-left: 10px;
   display: inline-block;
   top: 2px;
   position: relative;
@@ -375,7 +386,7 @@ body main .filter-wrapper .mid .filters .filter-options-wrapper .filter-option h
 body main .filter-wrapper .mid .filters .filter-options-wrapper .more-btn {
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.3137254902);
+  color: rgba(255, 255, 255, 0.5019607843);
   cursor: pointer;
 }
 body main .filter-wrapper .mid .website-wrapper .filter-header {
@@ -444,7 +455,7 @@ body main .filter-wrapper .bottom .generic-filter-btn-wrapper button {
   background-color: var(--lightest-black);
   border: none;
   border-radius: 4px;
-  color: rgba(255, 255, 255, 0.3137254902);
+  color: rgba(255, 255, 255, 0.5019607843);
   font-size: 12px;
   padding: 7px 12px;
 }
@@ -457,18 +468,21 @@ body main .main-section .multi-tabs-wrapper {
 body main .main-section .multi-tabs-wrapper .multi-tab-btn {
   font-size: 14px;
   cursor: pointer;
-  color: #737373;
+  color: #b6b9ba;
   margin-right: 30px;
   height: 40px;
-  border-bottom: 5px solid transparent;
+  border-bottom: 4px solid transparent;
 }
 body main .main-section .multi-tabs-wrapper .multi-tab-btn.active {
   color: var(--primary);
-  border-bottom: 5px solid var(--primary);
+  border-bottom: 4px solid var(--primary);
 }
 body main .main-section .secondary-filter-wrapper {
   margin: 18px 0 20px;
   padding-right: 30px;
+}
+body main .main-section .secondary-filter-wrapper .left {
+  color: #808080;
 }
 body main .main-section .secondary-filter-wrapper .left button {
   background: none;
@@ -491,12 +505,13 @@ body main .main-section .secondary-filter-wrapper .right button {
   font-size: 14px;
   margin-left: 10px;
   cursor: pointer;
+  color: #808080;
 }
 body main .main-section .secondary-filter-wrapper .right button.active {
   color: var(--primary);
 }
 body main .main-section .my-account-display-wrapper {
-  max-height: calc(100vh - 232px);
+  max-height: calc(100vh - 245px);
   overflow-y: auto;
   padding-right: 30px;
 }
@@ -525,11 +540,15 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -20px;
+  left: -25px;
   cursor: pointer;
+  width: 18px;
+  height: 18px;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title h2 {
   font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .location svg, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .link svg, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .phone svg {
   fill: var(--dark-primary);
@@ -537,6 +556,7 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .location p, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .link p, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .phone p {
   font-size: 14px;
+  color: #808080;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .link p {
   color: var(--dark-primary);
@@ -548,9 +568,11 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-table-inner .table-col .column-title {
   font-size: 14px;
+  color: #464646;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-table-inner .table-col .column-data {
   font-size: 22px;
+  color: #808080;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-pills {
   padding-top: 16px;
@@ -558,6 +580,7 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-pills .category-pills-wrapper .pills-title {
   font-size: 14px;
   margin-right: 18px;
+  color: #464646;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-pills .category-pills-wrapper .pills-wrapper {
   flex-wrap: wrap;
@@ -565,7 +588,8 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-pills .category-pills-wrapper .pills-wrapper p {
   font-size: 13px;
   padding: 5px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #e9eaeb;
+  color: #808080;
   border-radius: 25px;
   margin-right: 10px;
 }
@@ -574,7 +598,7 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
   background: none;
   color: var(--primary);
   padding: 5px 10px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(21, 174, 117, 0.1);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -657,12 +681,80 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5019607843);
 }
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph.small-graph .outer-circle {
+  width: 80px;
+  height: 80px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph.small-graph .outer-circle .inner-circle {
+  position: relative;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph.small-graph .outer-circle .inner-circle .third-circle {
+  top: 28px;
+  left: 50%;
+  transform: translate(-50%);
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph.small-graph .outer-circle .inner-circle .fourth-circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 1px 3px 5px #555;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph.small-graph .outer-circle .inner-circle .left-half {
+  background-color: red;
+  border-radius: 52px 0 0;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph.small-graph .outer-circle .inner-circle .right-half {
+  background-color: red;
+  border-radius: 0 52px 0 0;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph.small-graph .outer-circle .inner-circle .left-num {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  z-index: 2;
+  font-size: 9px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph.small-graph .outer-circle .inner-circle .mid-num {
+  left: 50%;
+  position: absolute;
+  top: 30px;
+  transform: translate(-50%);
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  z-index: 2;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph.small-graph .outer-circle .inner-circle .right-num {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  z-index: 2;
+  font-size: 9px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer {
   padding: 14px 0;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer .left p {
   font-size: 14px;
   margin-right: 14px;
+  color: #464646;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer .left svg {
   fill: var(--primary);
@@ -681,8 +773,12 @@ body main .main-section .my-account-display-wrapper .extra-details-wrapper {
   justify-content: center;
   align-items: center;
 }
+body main .main-section .my-account-display-wrapper .extra-details-wrapper p {
+  color: #808080;
+}
 body main .main-section .my-account-display-wrapper .extra-details-wrapper p span {
   color: var(--primary);
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px) {
