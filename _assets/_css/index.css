@@ -546,6 +546,41 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
   width: 18px;
   height: 18px;
 }
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title .checkbox input[type=checkbox] {
+  cursor: pointer;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title .checkbox input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  background-color: transparent;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title .checkbox input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title .checkbox input[type=checkbox]:checked:before {
+  background-color: var(--primary);
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title .checkbox svg {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title .checkbox.active svg {
+  fill: #fff;
+}
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title h2 {
   font-size: 20px;
   font-weight: 500;
