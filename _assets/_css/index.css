@@ -137,6 +137,7 @@ body header {
 body header .hamburger {
   padding: 30px 26px 25px 28px;
   border-right: 1px solid #dedede;
+  cursor: pointer;
 }
 body header .hamburger .first {
   width: 28px;
@@ -156,6 +157,7 @@ body header .hamburger .third {
   margin-top: 3px;
 }
 body header .mid-header .left .logo-wrapper {
+  cursor: pointer;
   margin-left: 10px;
   margin-right: 50px;
 }
@@ -165,6 +167,7 @@ body header .mid-header .left .search-wrapper form input {
   border: none;
 }
 body header .mid-header .left .search-wrapper form button {
+  cursor: pointer;
   height: 39px;
   padding: 10px 10px;
   background-color: var(--primary);
@@ -173,13 +176,32 @@ body header .mid-header .left .search-wrapper form button {
 body header .mid-header .left .search-wrapper form svg {
   fill: #fff;
 }
+body header .mid-header .right {
+  padding-right: 20px;
+}
 body header .mid-header .right .help-wrapper svg {
   margin-right: 25px;
+  cursor: pointer;
   fill: #878787;
 }
 body header .mid-header .right .notification-wrapper svg {
   margin-right: 25px;
   fill: #878787;
+  cursor: pointer;
+}
+body header .mid-header .right .notification-wrapper p {
+  background: #F95440;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
 }
 body header .mid-header .right .login-wrapper img {
   width: 34px;
@@ -191,6 +213,7 @@ body header .mid-header .right .login-wrapper p {
   color: #464646;
 }
 body header .mid-header .right .login-wrapper svg {
+  cursor: pointer;
   fill: #878787;
 }
 body aside {
@@ -201,7 +224,7 @@ body aside {
   top: 70px;
   bottom: 0;
   left: 0;
-  height: 100vh;
+  height: calc(100vh - 70px);
 }
 body aside .sidebar-wrapper .sidebar-links {
   list-style-type: none;
@@ -221,8 +244,7 @@ body aside .sidebar-wrapper .sidebar-links a svg {
 }
 body main {
   background-color: #dbdbdb;
-  padding-left: 100px;
-  padding-top: 28px;
+  padding: 28px 0 28px 100px;
 }
 body main .filter-wrapper {
   width: 320px;
@@ -249,7 +271,7 @@ body main .filter-wrapper .top p {
   line-height: 15.6px;
 }
 body main .filter-wrapper .mid {
-  max-height: 450px;
+  max-height: calc(100vh - 280px);
   overflow: auto;
   background-color: var(--light-black);
 }
@@ -275,6 +297,7 @@ body main .filter-wrapper .mid .filters .filter-header .filter-title {
 }
 body main .filter-wrapper .mid .filters .filter-header svg {
   fill: rgba(255, 255, 255, 0.3137254902);
+  cursor: pointer;
 }
 body main .filter-wrapper .mid .filters .search-wrapper {
   margin: 16px 0 20px 0;
@@ -353,6 +376,7 @@ body main .filter-wrapper .mid .filters .filter-options-wrapper .more-btn {
   background: none;
   border: none;
   color: rgba(255, 255, 255, 0.3137254902);
+  cursor: pointer;
 }
 body main .filter-wrapper .mid .website-wrapper .filter-header {
   margin-bottom: 32px !important;
@@ -360,6 +384,35 @@ body main .filter-wrapper .mid .website-wrapper .filter-header {
 body main .filter-wrapper .mid .website-wrapper .filter-option h4 {
   color: #fff !important;
   padding-left: 0 !important;
+}
+body main .filter-wrapper .mid .slider-btn-wrapper {
+  width: 32px;
+  height: 12px;
+  background: #fff;
+  border-radius: 25px;
+}
+body main .filter-wrapper .mid .slider-btn-wrapper .slider {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  cursor: pointer;
+}
+body main .filter-wrapper .mid .slider-btn-wrapper .slider.green {
+  background-color: var(--primary);
+  left: 80%;
+  transform: translateX(-50%);
+}
+body main .filter-wrapper .mid .slider-btn-wrapper .slider.gray {
+  background-color: gray;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body main .filter-wrapper .mid .slider-btn-wrapper .slider.red {
+  background-color: var(--red);
+  left: 20%;
+  transform: translateX(-50%);
 }
 body main .filter-wrapper .mid .and-or-wrapper svg {
   margin-left: 10px;
@@ -386,6 +439,7 @@ body main .filter-wrapper .bottom .generic-filter-btn-wrapper {
   gap: 10px;
 }
 body main .filter-wrapper .bottom .generic-filter-btn-wrapper button {
+  cursor: pointer;
   height: 32px;
   background-color: var(--lightest-black);
   border: none;
@@ -395,13 +449,14 @@ body main .filter-wrapper .bottom .generic-filter-btn-wrapper button {
   padding: 7px 12px;
 }
 body main .main-section {
-  margin-left: 360px;
+  margin-left: 350px;
 }
 body main .main-section .multi-tabs-wrapper {
   border-bottom: 1px solid #bbb;
 }
 body main .main-section .multi-tabs-wrapper .multi-tab-btn {
   font-size: 14px;
+  cursor: pointer;
   color: #737373;
   margin-right: 30px;
   height: 40px;
@@ -413,13 +468,14 @@ body main .main-section .multi-tabs-wrapper .multi-tab-btn.active {
 }
 body main .main-section .secondary-filter-wrapper {
   margin: 18px 0 20px;
-  padding-right: 22px;
+  padding-right: 30px;
 }
 body main .main-section .secondary-filter-wrapper .left button {
   background: none;
   border: none;
   fill: var(--primary);
   margin-right: 18px;
+  cursor: pointer;
 }
 body main .main-section .secondary-filter-wrapper .left select {
   background: none;
@@ -427,15 +483,22 @@ body main .main-section .secondary-filter-wrapper .left select {
   border: none;
   margin: 0 5px;
   font-size: 14px;
+  cursor: pointer;
 }
 body main .main-section .secondary-filter-wrapper .right button {
   background: none;
   border: none;
   font-size: 14px;
   margin-left: 10px;
+  cursor: pointer;
+}
+body main .main-section .secondary-filter-wrapper .right button.active {
+  color: var(--primary);
 }
 body main .main-section .my-account-display-wrapper {
-  padding-right: 22px;
+  max-height: calc(100vh - 232px);
+  overflow-y: auto;
+  padding-right: 30px;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper {
   background: var(--light-white);
@@ -463,6 +526,7 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
   top: 50%;
   transform: translateY(-50%);
   left: -20px;
+  cursor: pointer;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-title h2 {
   font-size: 20px;
@@ -512,13 +576,14 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
   padding: 5px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  cursor: pointer;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle {
   width: 114px;
   height: 114px;
   border-radius: 50%;
   padding: 10px;
-  box-shadow: 1px 3px 5px #555;
+  box-shadow: 0px 2px 5px #efe5e5;
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle {
   width: 100%;
@@ -544,7 +609,7 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
   background: #fff;
   box-shadow: 1px 3px 5px #555;
   position: absolute;
-  top: 12px;
+  top: 25px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -570,14 +635,15 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .left-num {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 18px;
+  z-index: 2;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5019607843);
 }
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .mid-num {
   left: 50%;
   position: absolute;
-  top: 35px;
+  top: 38px;
   transform: translate(-50%);
   font-size: 36px;
   color: rgba(0, 0, 0, 0.5019607843);
@@ -586,7 +652,8 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right .right-graph-inner .graph .outer-circle .inner-circle .right-num {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 18px;
+  z-index: 2;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5019607843);
 }
@@ -606,6 +673,7 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer .right svg {
   fill: var(--primary);
   transform: rotate(180deg);
+  cursor: pointer;
 }
 body main .main-section .my-account-display-wrapper .extra-details-wrapper {
   min-height: 150px;
@@ -615,4 +683,131 @@ body main .main-section .my-account-display-wrapper .extra-details-wrapper {
 }
 body main .main-section .my-account-display-wrapper .extra-details-wrapper p span {
   color: var(--primary);
+}
+
+@media screen and (max-width: 1024px) {
+  body header .mid-header .left .search-wrapper form input {
+    width: 390px;
+  }
+  body main .filter-wrapper .top p {
+    width: 100%;
+  }
+  body main .main-section {
+    margin-left: 335px;
+  }
+  body main .main-section .secondary-filter-wrapper {
+    padding-right: 35px;
+  }
+  body main .main-section .my-account-display-wrapper {
+    padding-right: 15px;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper {
+    padding: 14px 15px 14px 30px;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper {
+    flex-direction: column;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left {
+    width: 100%;
+    border: none;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-table-inner .table-col .column-data {
+    font-size: 16px;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-pills {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  body header .mid-header .left .search-wrapper form input {
+    width: 160px;
+  }
+  body aside {
+    height: 100vh;
+  }
+  body main {
+    padding: 20px 15px 28px 100px;
+  }
+  body main .filter-wrapper {
+    width: 100%;
+    position: static;
+  }
+  body main .filter-wrapper .mid {
+    max-height: 30vh;
+  }
+  body main .main-section {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body header .hamburger {
+    padding: 15px;
+  }
+  body header .mid-header .left .logo-wrapper {
+    margin-right: 30px;
+  }
+  body header .mid-header .left .search-wrapper {
+    position: fixed;
+    top: 68px;
+    left: 50%;
+    width: 100%;
+    background: var(--light-white);
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+  }
+  body header .mid-header .left .search-wrapper form {
+    width: calc(100% - 30px);
+    margin: auto;
+  }
+  body header .mid-header .left .search-wrapper form input {
+    width: 100%;
+  }
+  body header .mid-header .right .help-wrapper svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  body header .mid-header .right .notification-wrapper svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  body header .mid-header .right .login-wrapper img {
+    width: 20px;
+    height: 20px;
+  }
+  body aside {
+    display: none;
+  }
+  body main {
+    padding: 75px 15px 0;
+  }
+  body main .main-section .multi-tabs-wrapper .multi-tab-btn {
+    font-size: 11px;
+  }
+  body main .main-section .secondary-filter-wrapper {
+    padding-right: 15px;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-table-inner {
+    overflow-x: scroll;
+    max-width: 100%;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .data-table-inner .table-col {
+    min-width: 100px;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-table-wrapper .category-pills-wrapper {
+    margin-bottom: 20px;
+  }
+  body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-footer .left p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=index.css.map */

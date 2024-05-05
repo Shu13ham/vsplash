@@ -141,6 +141,7 @@ body {
     .hamburger{
       padding: 30px 26px 25px 28px;
       border-right: 1px solid #dedede;
+      cursor: pointer;
       .first{
         width: 28px;
         height: 3px;
@@ -162,6 +163,7 @@ body {
     .mid-header{
       .left{
         .logo-wrapper{
+        cursor: pointer;
           margin-left: 10px;
           margin-right: 50px;
           img{}
@@ -174,6 +176,7 @@ body {
               border: none;
             }
             button{
+              cursor: pointer;
               height: 39px;
               padding: 10px 10px;
               background-color: var(--primary);
@@ -186,9 +189,11 @@ body {
         }
       }
       .right{
+        padding-right: 20px;
         .help-wrapper{
           svg{
             margin-right: 25px;
+            cursor: pointer;
             fill: #878787;
           }
         }
@@ -196,8 +201,22 @@ body {
           svg{
             margin-right: 25px;
             fill: #878787;
+            cursor: pointer;
           }
-          p{}
+          p{
+            background: #F95440;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            color: #fff;
+            position: absolute;
+            top: -5px;
+            left: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 11px;
+          }
         }
         .login-wrapper{
           img{
@@ -210,6 +229,7 @@ body {
             color: #464646;
           }
           svg{
+            cursor: pointer;
             fill: #878787;
           }
         }
@@ -225,7 +245,7 @@ body {
     top: 70px;
     bottom: 0;
     left: 0;
-    height: 100vh;
+    height: calc(100vh - 70px);
     .sidebar-wrapper{
       .sidebar-links{
         list-style-type: none;
@@ -248,8 +268,8 @@ body {
 
   main{
     background-color: #dbdbdb;
-    padding-left: 100px;
-    padding-top: 28px;
+    padding:28px 0 28px 100px ;
+
     .filter-wrapper{
       width: 320px;
       position: fixed;
@@ -274,7 +294,7 @@ body {
         }
       }
       .mid{
-        max-height: 450px;
+        max-height: calc(100vh - 280px);
         overflow: auto;
         background-color: var(--light-black);
         &::-webkit-scrollbar {
@@ -300,6 +320,7 @@ body {
             }
             svg{
               fill: #ffffff50;
+              cursor: pointer;
             }
           }
           .search-wrapper{
@@ -388,6 +409,7 @@ body {
               background: none;
               border: none;
               color: #ffffff50;
+              cursor: pointer;
             }
           }
         }
@@ -398,6 +420,35 @@ body {
           .filter-option h4{
             color: #fff !important;
             padding-left: 0 !important;
+          }
+        }
+        .slider-btn-wrapper{
+          width: 32px;
+          height: 12px;
+          background: #fff;
+          border-radius: 25px;
+          .slider{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+            top: -2px;
+            cursor: pointer;
+            &.green{
+              background-color: var(--primary);
+              left: 80%;
+              transform: translateX(-50%);
+            }
+            &.gray{
+              background-color: gray;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            &.red{
+              background-color: var(--red);
+              left: 20%;
+              transform: translateX(-50%);
+            }
           }
         }
         .and-or-wrapper{
@@ -426,6 +477,7 @@ body {
           grid-template-columns: auto auto auto;
           gap: 10px;
           button{
+            cursor: pointer;
             height: 32px;
             background-color: var(--lightest-black);
             border: none;
@@ -438,11 +490,12 @@ body {
       }
     }
     .main-section{
-      margin-left: 360px;
+      margin-left: 350px;
       .multi-tabs-wrapper{
         border-bottom: 1px solid #bbb;
         .multi-tab-btn{
           font-size: 14px;
+          cursor: pointer;
           color: #737373;
           margin-right: 30px;
           height: 40px;
@@ -455,13 +508,14 @@ body {
       }
       .secondary-filter-wrapper{
         margin: 18px 0 20px;
-        padding-right: 22px;
+        padding-right: 30px;
         .left{
           button{
             background: none;
             border: none;
             fill: var(--primary);
             margin-right: 18px;
+            cursor: pointer;
           }
           select{
             background: none;
@@ -469,6 +523,7 @@ body {
             border: none;
             margin: 0 5px;
             font-size: 14px;
+            cursor: pointer;
             option{}
           }
         }
@@ -478,11 +533,17 @@ body {
             border: none;
             font-size: 14px;
             margin-left: 10px;
+            cursor: pointer;
+            &.active{
+              color: var(--primary)
+            }
           }
         }
       }
       .my-account-display-wrapper{
-        padding-right: 22px;
+        max-height: calc(100vh - 232px);
+        overflow-y: auto;
+        padding-right: 30px;
         .data-display-wrapper{
           background: var(--light-white);
           padding: 14px 40px 14px 50px;
@@ -508,6 +569,7 @@ body {
                       top: 50%;
                       transform: translateY(-50%);
                       left: -20px;
+                      cursor: pointer;
                     }
                     h2{
                       font-size: 20px;
@@ -574,6 +636,7 @@ body {
                       padding: 5px 10px;
                       border: 1px solid #ccc;
                       border-radius: 4px;
+                      cursor: pointer;
                     }
                   }
                   .graph{
@@ -582,7 +645,7 @@ body {
                       height: 114px;
                       border-radius: 50%;
                       padding: 10px;
-                      box-shadow: 1px 3px 5px #555;
+                      box-shadow: 0px 2px 5px #efe5e5;;
                       .inner-circle{
                         width: 100%;
                         height: 100%;
@@ -606,7 +669,7 @@ body {
                           background: #fff;
                           box-shadow: 1px 3px 5px #555;
                           position: absolute;
-                          top: 12px;
+                          top: 25px;
                           left: 50%;
                           transform: translateX(-50%);
                           z-index: 2;
@@ -632,14 +695,15 @@ body {
                         .left-num{
                           position: absolute;
                           top: 50%;
-                          left: 15px;
+                          left: 18px;
+                          z-index: 2;
                           font-size: 13px;
                           color: #00000080;
                         }
                         .mid-num{
                           left: 50%;
                           position: absolute;
-                          top: 35px;
+                          top: 38px;
                           transform: translate(-50%);
                           font-size: 36px;
                           color: #00000080;
@@ -648,7 +712,8 @@ body {
                         .right-num{
                           position: absolute;
                           top: 50%;
-                          right: 15px;
+                          right: 18px;
+                          z-index: 2;
                           font-size: 13px;
                           color: #00000080;
                         }
@@ -677,6 +742,7 @@ body {
                   svg{
                     fill: var(--primary);
                     transform: rotate(180deg);
+                    cursor: pointer;
                   }
                 }
             }
@@ -691,172 +757,6 @@ body {
             span{
               color: var(--primary);
             }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  body {
-    header{
-      .hamburger{
-        .first{}
-        .second{}
-        .third{}
-      }
-      .mid-header{
-        .left{
-          .logo-wrapper{
-            img{}
-          }
-          .search-wrapper{
-            form{
-              input{}
-              button{}
-              svg{}
-            }
-          }
-        }
-        .right{
-          .help-wrapper{
-            svg{}
-          }
-          .notification-wrapper{
-            svg{}
-            p{}
-          }
-          .login-wrapper{
-            img{}
-            p{}
-            svg{}
-          }
-        }
-      }
-    }
-  
-    aside{
-      .sidebar-wrapper{
-        .sidebar-links{
-          a{
-            svg{}
-          }
-        }
-      }
-    }
-  
-    main{
-      .filter-wrapper{
-        .top{
-          .filter-title{}
-          p{}
-        }
-        .mid{
-          .categories-wrapper{
-          } 
-          .filters{
-            .filter-header{
-              .filter-title{}
-              svg{}
-            }
-            .search-wrapper{
-              form{
-                .input-text{
-                  input{}
-                  svg{}
-                }
-              }
-            }
-            .filter-options-wrapper{
-              .filter-option{
-                .checkbox{
-                  svg{}
-                }
-                h4{}
-              }
-              .more-btn{}
-            }
-          }
-        }
-        .bottom{
-          .generic-filter-btn-wrapper{
-            .clear-all-btn{}
-            .save-btn{}
-            .apply-btn{}
-          }
-        }
-      }
-      .main-section{
-        .multi-tabs-wrapper{
-          .multi-tab-btn{}
-        }
-        .secondary-filter-wrapper{
-          .left{
-            button{}
-            select{
-              option{}
-            }
-          }
-          .right{
-            button{}
-          }
-        }
-        .my-account-display-wrapper{
-          .data-display-wrapper{
-            .data-display-inner{
-              .data-graph-wrapper{
-                .left{
-                  .data-heading{
-                    .data-title{
-                      input{}
-                      h2{}
-                    }
-                    .data-details{
-                      .location{
-                        svg{}
-                        p{}
-                      }
-                      .link{
-                        svg{} 
-                        p{}
-                      }
-                      .phone{
-                        svg{}
-                      }
-                    }
-                  }
-                  .data-table-wrapper{
-                    .data-table-inner{
-                      .table-col{
-                        .column-title{}
-                        .column-data{}
-                      }
-                    }
-                  }
-                }
-                .right{
-                  .right-graph-inner{
-                    .add-btn{
-                      button{}
-                    }
-                    .graph{}
-                  }
-                }
-              }
-              .data-footer{
-                .data-footer-inner{}
-                  .left{
-                    p{}
-                  }
-                  .right{
-                    svg{}
-                  }
-              }
-            }
-          } 
-          .extra-details-wrapper{
-            p{}
           }
         }
       }
@@ -879,7 +779,9 @@ body {
           }
           .search-wrapper{
             form{
-              input{}
+              input{
+                width: 390px;
+              }
               button{}
               svg{}
             }
@@ -916,7 +818,9 @@ body {
       .filter-wrapper{
         .top{
           .filter-title{}
-          p{}
+          p{
+            width: 100%;
+          }
         }
         .mid{
           .categories-wrapper{
@@ -954,10 +858,12 @@ body {
         }
       }
       .main-section{
+        margin-left: 335px;
         .multi-tabs-wrapper{
           .multi-tab-btn{}
         }
         .secondary-filter-wrapper{
+          padding-right: 35px;
           .left{
             button{}
             select{
@@ -969,16 +875,23 @@ body {
           }
         }
         .my-account-display-wrapper{
+          padding-right: 15px;
           .data-display-wrapper{
+            padding: 14px 15px 14px 30px;
             .data-display-inner{
               .data-graph-wrapper{
+                flex-direction: column;
                 .left{
+                  width: 100%;
+                  border: none;
                   .data-heading{
                     .data-title{
                       input{}
                       h2{}
                     }
                     .data-details{
+                      flex-direction: column;
+                      align-items: flex-start;
                       .location{
                         svg{}
                         p{}
@@ -996,12 +909,19 @@ body {
                     .data-table-inner{
                       .table-col{
                         .column-title{}
-                        .column-data{}
+                        .column-data{
+                          font-size: 16px;
+                        }
                       }
+                    }
+                    .data-pills{
+                      flex-direction: column;
+                      align-items: flex-start;
                     }
                   }
                 }
                 .right{
+                  width: 100%;
                   .right-graph-inner{
                     .add-btn{
                       button{}
@@ -1030,7 +950,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   body {
     header{
       .hamburger{
@@ -1045,7 +965,9 @@ body {
           }
           .search-wrapper{
             form{
-              input{}
+              input{
+                width: 160px;
+              }
               button{}
               svg{}
             }
@@ -1069,6 +991,7 @@ body {
     }
   
     aside{
+      height: 100vh;
       .sidebar-wrapper{
         .sidebar-links{
           a{
@@ -1079,12 +1002,16 @@ body {
     }
   
     main{
+      padding: 20px 15px 28px 100px;
       .filter-wrapper{
+        width: 100%;
+        position: static;
         .top{
           .filter-title{}
           p{}
         }
         .mid{
+          max-height: calc(30vh);
           .categories-wrapper{
           } 
           .filters{
@@ -1120,6 +1047,8 @@ body {
         }
       }
       .main-section{
+        margin-left: 0;
+        margin-top: 50px;
         .multi-tabs-wrapper{
           .multi-tab-btn{}
         }
@@ -1200,6 +1129,7 @@ body {
   body {
     header{
       .hamburger{
+        padding: 15px;
         .first{}
         .second{}
         .third{}
@@ -1207,11 +1137,23 @@ body {
       .mid-header{
         .left{
           .logo-wrapper{
+            margin-right: 30px;
             img{}
           }
           .search-wrapper{
+            position: fixed;
+            top: 68px;
+            left: 50%;
+            width: 100%;
+            background: var(--light-white);
+            transform: translateX(-50%);
+            padding-bottom: 10px;
             form{
-              input{}
+              width: calc(100% - 30px);
+              margin: auto;
+              input{
+                width: 100%;
+              }
               button{}
               svg{}
             }
@@ -1219,14 +1161,25 @@ body {
         }
         .right{
           .help-wrapper{
-            svg{}
+            svg{
+              width: 18px;
+              height: 18px;
+              margin-right: 10px;
+            }
           }
           .notification-wrapper{
-            svg{}
+            svg{
+              width: 18px;
+              height: 18px;
+              margin-right: 10px;
+            }
             p{}
           }
           .login-wrapper{
-            img{}
+            img{
+              width: 20px;
+              height: 20px;
+            }
             p{}
             svg{}
           }
@@ -1235,6 +1188,7 @@ body {
     }
   
     aside{
+      display: none;
       .sidebar-wrapper{
         .sidebar-links{
           a{
@@ -1245,6 +1199,7 @@ body {
     }
   
     main{
+      padding: 75px 15px 0;
       .filter-wrapper{
         .top{
           .filter-title{}
@@ -1287,9 +1242,12 @@ body {
       }
       .main-section{
         .multi-tabs-wrapper{
-          .multi-tab-btn{}
+          .multi-tab-btn{
+            font-size: 11px;
+          }
         }
         .secondary-filter-wrapper{
+          padding-right: 15px;
           .left{
             button{}
             select{
@@ -1326,10 +1284,16 @@ body {
                   }
                   .data-table-wrapper{
                     .data-table-inner{
+                      overflow-x: scroll;
+                      max-width: 100%;
                       .table-col{
+                        min-width: 100px;
                         .column-title{}
                         .column-data{}
                       }
+                    }
+                    .category-pills-wrapper{
+                      margin-bottom: 20px;
                     }
                   }
                 }
@@ -1345,7 +1309,9 @@ body {
               .data-footer{
                 .data-footer-inner{}
                   .left{
-                    p{}
+                    p{
+                      font-size: 12px;
+                    }
                   }
                   .right{
                     svg{}
