@@ -148,6 +148,7 @@ body {
         height: 3px;
         background-color: #4E554E;
         border-radius: 4px;
+        transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
       }
       .second{
         width: 28px;
@@ -162,6 +163,15 @@ body {
         background-color: #4E554E;
         border-radius: 4px;
         margin-top: 3px;
+        transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+      }
+      &:hover{
+        .first{
+          width: 17px;
+        }
+        .third{
+          width: 28px;
+        }
       }
     }
     .mid-header{
@@ -187,6 +197,10 @@ body {
               padding: 10px 16px;
               background-color: var(--primary);
               border: none;
+              transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+              &:hover{
+                background-color: var(--dark-primary);
+              }
             }
             svg{
               fill: #fff;
@@ -201,6 +215,12 @@ body {
             margin-right: 25px;
             cursor: pointer;
             fill: #878787;
+            transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+          }
+          &:hover{
+            svg{
+              fill: #000;
+            }
           }
         }
         .notification-wrapper{
@@ -208,6 +228,7 @@ body {
             margin-right: 25px;
             fill: #878787;
             cursor: pointer;
+            transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
           }
           p{
             background: #F95440;
@@ -222,9 +243,19 @@ body {
             justify-content: center;
             align-items: center;
             font-size: 11px;
+            transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+          }
+          &:hover{
+            svg{
+              fill: #000;
+            }
+            p{
+              color: #000;
+            }
           }
         }
         .login-wrapper{
+          cursor: pointer;
           img{
             width: 34px;
             height: 34px;
@@ -233,10 +264,20 @@ body {
             margin: 0 11px;
             font-size: 13px;
             color: #464646;
+            transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
           }
           svg{
             cursor: pointer;
             fill: #878787;
+            transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+          }
+          &:hover{
+            svg{
+              fill: #000;
+            }
+            p{
+              color: #000;
+            }
           }
         }
       }
@@ -252,12 +293,15 @@ body {
     bottom: 0;
     left: 0;
     height: calc(100vh - 70px);
+    transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
     .sidebar-wrapper{
       .sidebar-links{
         list-style-type: none;
         padding: 21px 0 17px;
         border-bottom: 1px solid #ffffff10;
         width: 100%;
+        transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+
         a{
           color: #ffffff80;
           font-size: 13px;
@@ -268,7 +312,17 @@ body {
             fill: #ffffff80;
           }
         }
+        &:hover{
+          background-color: var(--primary);
+          a, svg{
+            fill: #ffffff80;
+            color: #ffffff80;
+          }
+        }
       }
+    }
+    &.hamburger-clicked{
+      left: -83px;
     }
   }
 
@@ -281,6 +335,7 @@ body {
       position: fixed;
       top: 98px;
       left: 100px;
+      transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
       .top{
         color: #fff;
         padding: 18px 20px 17px;
@@ -497,6 +552,7 @@ body {
       }
     }
     .main-section{
+      transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
       margin-left: 350px;
       .multi-tabs-wrapper{
         border-bottom: 1px solid #bbb;

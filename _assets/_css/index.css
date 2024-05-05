@@ -145,6 +145,7 @@ body header .hamburger .first {
   height: 3px;
   background-color: #4E554E;
   border-radius: 4px;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
 }
 body header .hamburger .second {
   width: 28px;
@@ -159,6 +160,13 @@ body header .hamburger .third {
   background-color: #4E554E;
   border-radius: 4px;
   margin-top: 3px;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+}
+body header .hamburger:hover .first {
+  width: 17px;
+}
+body header .hamburger:hover .third {
+  width: 28px;
 }
 body header .mid-header .left .logo-wrapper {
   cursor: pointer;
@@ -182,6 +190,10 @@ body header .mid-header .left .search-wrapper form button {
   padding: 10px 16px;
   background-color: var(--primary);
   border: none;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+}
+body header .mid-header .left .search-wrapper form button:hover {
+  background-color: var(--dark-primary);
 }
 body header .mid-header .left .search-wrapper form svg {
   fill: #fff;
@@ -193,11 +205,16 @@ body header .mid-header .right .help-wrapper svg {
   margin-right: 25px;
   cursor: pointer;
   fill: #878787;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+}
+body header .mid-header .right .help-wrapper:hover svg {
+  fill: #000;
 }
 body header .mid-header .right .notification-wrapper svg {
   margin-right: 25px;
   fill: #878787;
   cursor: pointer;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
 }
 body header .mid-header .right .notification-wrapper p {
   background: #F95440;
@@ -212,6 +229,16 @@ body header .mid-header .right .notification-wrapper p {
   justify-content: center;
   align-items: center;
   font-size: 11px;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+}
+body header .mid-header .right .notification-wrapper:hover svg {
+  fill: #000;
+}
+body header .mid-header .right .notification-wrapper:hover p {
+  color: #000;
+}
+body header .mid-header .right .login-wrapper {
+  cursor: pointer;
 }
 body header .mid-header .right .login-wrapper img {
   width: 34px;
@@ -221,10 +248,18 @@ body header .mid-header .right .login-wrapper p {
   margin: 0 11px;
   font-size: 13px;
   color: #464646;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
 }
 body header .mid-header .right .login-wrapper svg {
   cursor: pointer;
   fill: #878787;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
+}
+body header .mid-header .right .login-wrapper:hover svg {
+  fill: #000;
+}
+body header .mid-header .right .login-wrapper:hover p {
+  color: #000;
 }
 body aside {
   width: 83px;
@@ -235,12 +270,14 @@ body aside {
   bottom: 0;
   left: 0;
   height: calc(100vh - 70px);
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
 }
 body aside .sidebar-wrapper .sidebar-links {
   list-style-type: none;
   padding: 21px 0 17px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.062745098);
   width: 100%;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
 }
 body aside .sidebar-wrapper .sidebar-links a {
   color: rgba(255, 255, 255, 0.5019607843);
@@ -252,6 +289,16 @@ body aside .sidebar-wrapper .sidebar-links a svg {
   margin-bottom: 6px;
   fill: rgba(255, 255, 255, 0.5019607843);
 }
+body aside .sidebar-wrapper .sidebar-links:hover {
+  background-color: var(--primary);
+}
+body aside .sidebar-wrapper .sidebar-links:hover a, body aside .sidebar-wrapper .sidebar-links:hover svg {
+  fill: rgba(255, 255, 255, 0.5019607843);
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+body aside.hamburger-clicked {
+  left: -83px;
+}
 body main {
   background-color: #E9E9E9;
   padding: 28px 0 42px 100px;
@@ -261,6 +308,7 @@ body main .filter-wrapper {
   position: fixed;
   top: 98px;
   left: 100px;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
 }
 body main .filter-wrapper .top {
   color: #fff;
@@ -460,6 +508,7 @@ body main .filter-wrapper .bottom .generic-filter-btn-wrapper button {
   padding: 7px 12px;
 }
 body main .main-section {
+  transition: all 1s cubic-bezier(0.2, 0, 0, 1) 0s;
   margin-left: 350px;
 }
 body main .main-section .multi-tabs-wrapper {
