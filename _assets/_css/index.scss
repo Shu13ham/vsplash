@@ -6,10 +6,10 @@
   --primary: #15ae75;
   --secondary: #169aaf;
   --light-secondary: #93d2db;
-  --dark-primary: #0f875a;
+  --dark-primary: #0F875A;
   --light-primary: #13ae74;
-  --yellow: #fec400;
-  --red: #ff5733;
+  --yellow: #FFC300;
+  --red: #FF5733;
   --white: #ffffff;
   --medium-white: #808080;
   --light-white: #f7f7f7;
@@ -555,6 +555,7 @@ body {
         overflow-y: auto;
         padding-right: 30px;
         .data-display-wrapper{
+          box-shadow: 0 0px 9px #0000001a;
           background: var(--light-white);
           padding: 14px 40px 14px 50px;
           border-radius: 8px;
@@ -659,6 +660,7 @@ body {
                     }
                   }
                   .graph{
+                    margin-top: 16px;
                     .outer-circle{
                       width: 114px;
                       height: 114px;
@@ -692,6 +694,15 @@ body {
                           left: 50%;
                           transform: translateX(-50%);
                           z-index: 2;
+                        }
+                        .range{
+                          position: absolute;
+                          top: -16px;
+                          left: 50%;
+                          transform: translateX(-50%);
+                          z-index: 2;
+                          font-size: 13px;
+                          color: rgba(0, 0, 0, 0.5019607843);
                         }
                         .left-half{
                           background-color: red;
