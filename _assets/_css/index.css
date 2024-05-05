@@ -586,6 +586,9 @@ body main .main-section .my-account-display-wrapper .data-display-wrapper .data-
   font-weight: 500;
   line-height: 28px;
 }
+body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details {
+  flex-wrap: wrap;
+}
 body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .location svg, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .link svg, body main .main-section .my-account-display-wrapper .data-display-wrapper .data-display-inner .data-graph-wrapper .left .data-heading .data-details .phone svg {
   fill: var(--dark-primary);
   margin-right: 8px;
